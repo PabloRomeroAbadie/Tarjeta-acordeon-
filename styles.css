@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: 'Fraunces', serif; */
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    background: linear-gradient(180deg, var(--Soft-violet), var(--Soft-blue));
+    height: 100vh;
+}
+
+.main-container {
+    background-color: var(--white);
+    width: 330px;
+    min-height: 536px;
+    margin: 147px auto 30px;
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: 0 10px 40px var(--Very-dark-desaturated-blue);
+}
+
+.main-container__s1__image {
+    display: block;
+    width: 240px;
+    margin: -130px auto 0;
+}
+
+.main-container__s1__image--shadow {
+    width: 240px;
+    margin: -75px auto 0;
+    content: url(./images/bg-pattern-mobile.svg);
+}
+
+.main-container__s2__title {
+    margin: 24px 0 30px;
+    font-size: 2.6em;
+    text-align: center;
+}
+
+.main-container__s2__details {
+    margin: 16px 0;
+    font-size: 1.05em;
+    position: relative;
+}
+
+.main-container__s2__details[open] {
+    font-weight: 700;
+
+}
+
+.main-container__s2__details[open] .main-container__s2__details__icon {
+    transform: rotate(180deg);
+}
+
+.main-container__s2__details__summary {
+    list-style: none;
+}
+
+.main-container__s2__details__paragraph {
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.main-container__s2__details__icon {
+    position: absolute;
+    right: 5px;
+}
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
